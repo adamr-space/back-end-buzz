@@ -21,7 +21,7 @@ const NAMESPACE = "GAME";
 export const Game = {
   _playersList: [],
   state: State,
-  timeOuts: [[], [], [], []],
+  timeOuts: [],
 
   // METHODS
   initRooms() {
@@ -32,6 +32,7 @@ export const Game = {
     this.state.createRoom("SINGLE", 1, 3, 30, config.gridSize).addRound(3, 30);
     this.state.createRoom("DOUBLE", 1, 3, 30, config.gridSize).addRound(4, 30);
     this.state.createRoom("THREE", 1, 3, 30, config.gridSize).addRound(5, 30);
+    this.state.gameRooms.forEach(r=>this.timeOuts.push([]))
   },
 
   processState() {
