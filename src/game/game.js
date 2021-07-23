@@ -30,6 +30,8 @@ export const Game = {
     this.state.createRoom("SILVER", 4, 10, 45, config.gridSize).addRound(1, 45);
     this.state.createRoom("BRONZE", 4, 10, 60, config.gridSize).addRound(2, 60);
     this.state.createRoom("SINGLE", 1, 3, 30, config.gridSize).addRound(3, 30);
+    this.state.createRoom("DOUBLE", 1, 3, 30, config.gridSize).addRound(4, 30);
+    this.state.createRoom("THREE", 1, 3, 30, config.gridSize).addRound(5, 30);
   },
 
   processState() {
